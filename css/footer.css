@@ -1,0 +1,47 @@
+.fotbefoe::before {
+  content: "";
+  position: absolute;
+  top: 78px;
+  width: 100px;
+  height: 1px;
+  background: #000;
+}
+.fotbefoe::after {
+  content: "";
+  position: absolute;
+  top: 76px;
+  left: 15px;
+  width: 40px;
+  height: 3px;
+  background: #13a89e;
+}
+@media (max-width: 767px) {
+  .fotbefoe::before {
+    display: none;
+  }
+  .fotbefoe::after {
+    display: none;
+  }
+}
+
+.payHead {
+  font-size: 11px;
+  width: 300px;
+  border: 1px solid rgba(0, 0, 0, 0.5);
+  color: #13a89e;
+  border-radius: 25px;
+  font-weight: 600;
+  margin: 10px 0;
+}
+.PIcon {
+  font-size: 50px;
+}
+.PayText {
+  width: 150px;
+  color: #000000;
+}
+.payline {
+  width: 2px;
+  height: 50px;
+  background: #000000;
+}

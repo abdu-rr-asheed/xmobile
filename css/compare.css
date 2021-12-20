@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Poppins", sans-serif;
+}
+
+.Table_Specification {
+  display: block;
+  margin: 20px;
+}
+.Table_Specification table {
+  width: 100%;
+  margin: 15px 0;
+  /* border-bottom: 1px solid #000; */
+  overflow: hidden;
+}
+/* .Table_Specification tbody {
+  border-bottom: 1px solid #000;
+} */
+.Table_Specification th {
+  width: 110px;
+  color: #1786d3;
+}
+.Table_Specification th,
+.Table_Specification td {
+  vertical-align: top;
+}
+.Table_Specification tr .s_colum {
+  width: 150px;
+  font-weight: 600;
+}
+.Table_Specification form {
+  margin-bottom: 20px !important;
+  width: 350px !important;
+}
+
+.Table_Specification img {
+  width: auto !important;
+}

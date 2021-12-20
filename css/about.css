@@ -1,0 +1,182 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.about_bannar {
+  position: relative;
+  width: 100%;
+  height: 100vh;
+  background: url(../image/aboutBannar2.jpg);
+  background-size: cover;
+}
+.about_bannar::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.563);
+}
+.about_bannar img {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+.aboutTxt {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 85%;
+  height: 100%;
+  font-size: 4vw;
+  font-weight: 700;
+  margin: auto;
+  color: #fff;
+}
+.who_we_are {
+  position: relative;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: wrap-reverse;
+  margin: 20px auto;
+  width: 1250px;
+}
+.wwr_contant {
+  width: 50%;
+}
+
+.wwr_contant .wwr_head {
+  font-size: 30px;
+  font-weight: 600;
+}
+.wwr_contant .wwr_head span {
+  color: #13a89e;
+  font-size: 40px;
+}
+.wwr_contant p {
+  font-size: 20px;
+}
+.wwr_img {
+  width: 50%;
+  /* height: 335px; */
+  object-fit: cover;
+  overflow: hidden;
+}
+.wwr_img img {
+  width: auto;
+  /* height: 400px; */
+}
+.mvg {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: auto;
+  width: 1250px;
+}
+.misstion {
+  margin: 15px;
+  font-size: 18px;
+}
+.misstion .title {
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+.misstion span {
+  color: #13a89e;
+}
+.misstion .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 250px;
+  height: 1px;
+  background: #000;
+}
+.misstion .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 120px;
+  height: 3px;
+  background: #0f75bc;
+}
+.about_Xmbl {
+  margin: auto;
+  width: 1250px;
+  font-size: 18px;
+}
+.about_Xmbl .title {
+  position: relative;
+  font-size: 30px;
+  font-weight: 700;
+  padding-bottom: 8px;
+  margin-bottom: 15px;
+}
+.about_Xmbl span {
+  color: #13a89e;
+}
+.about_Xmbl .title::before {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  width: 250px;
+  height: 1px;
+  background: #000;
+}
+.about_Xmbl .title::after {
+  content: "";
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 120px;
+  height: 3px;
+  background: #0f75bc;
+}
+@media (max-width: 1250px) {
+  .mvg,
+  .about_Xmbl {
+    width: 100%;
+  }
+}
+@media (max-width: 450px) {
+  .about_Xmbl p ,.about_Xmbl .title{
+    margin: 10px 20px;
+    text-align: justify;
+  }
+  .about_bannar {
+    height: 50vh;
+  }
+}
+@media (max-width: 900px) {
+  .mvg {
+    flex-wrap: wrap;
+  }
+
+  .who_we_are {
+    width: 100%;
+  }
+
+  .wwr_contant {
+    width: 100%;
+    margin: 15px;
+  }
+  .wwr_img {
+    width: 100%;
+    margin: 15px;
+  }
+}
